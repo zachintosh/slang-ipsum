@@ -1,0 +1,16 @@
+.container {
+  margin: 10px 0;
+}
+
+.contents {
+  padding: 10px 10px;
+  line-height: 1.5rem;
+  user-select: all;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: min-content auto;
+}
+
+.text {
+  padding: 5px 10px 10px 0;
+}

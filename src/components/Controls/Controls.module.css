@@ -1,0 +1,50 @@
+.container {
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300;
+  margin-left: 5px;
+  line-height: 42px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.rightControls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rightControls > div {
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+
+  .controls {
+    margin: 15px 0;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .title {
+    text-align: center;
+  }
+}
