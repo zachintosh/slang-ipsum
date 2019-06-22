@@ -6,12 +6,5 @@ In a world where another lorem ipsum generator shouldn't be needed, it was. **Sl
 
 Bask in the hunnit-p dank dopeness of this heckin woke generator. So yolo. So lit.<sup>2</sup>
 
-<<<<<<< HEAD
-
-
 > <sup>1. Probably not, truthfully, since kids nowadays can't read.</sup><br />
 > <sup>2. The author is aware of his inability to properly use slang.</sup>
-=======
-> <sup>1. Probably not, truthfully, since kids nowadays can't read.</sup><br />
-> <sup>2. The author is aware of his inability to properly use slang.</sup>
->>>>>>> readme update
