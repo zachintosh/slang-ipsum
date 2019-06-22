@@ -6,6 +6,5 @@ Bask in the hunnit-p dank dopeness of this heckin woke generator. So yolo. So li
 
 
 
-> <sup>1. Probably not, truthfully, since kids nowadays can't read.</sup>
-  <br />
-  <sup>2. The author is aware of his inability to properly use slang.</sup>
+> <sup>1. Probably not, truthfully, since kids nowadays can't read.</sup><br />
+> <sup>2. The author is aware of his inability to properly use slang.</sup>
