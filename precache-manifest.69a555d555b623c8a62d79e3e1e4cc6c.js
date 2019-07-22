@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4855f41fbd6a1689d43dbff500010dc8",
+    "revision": "17282102e12dae36f1a2efcf967a57df",
     "url": "/slang-ipsum/index.html"
   },
   {

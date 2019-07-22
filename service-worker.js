@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/slang-ipsum/precache-manifest.a59e4aa547f2a860c35806806fb2e862.js"
+  "/slang-ipsum/precache-manifest.69a555d555b623c8a62d79e3e1e4cc6c.js"
 );
 
 self.addEventListener('message', (event) => {
