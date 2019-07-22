@@ -4,22 +4,16 @@ import { Card, IconButton } from '@material-ui/core'
 import CopyIcon from '@material-ui/icons/FileCopy'
 import AddIcon from '@material-ui/icons/Add'
 import RemoveIcon from '@material-ui/icons/Remove'
+import TrashIcon from '@material-ui/icons/Delete'
 import Tooltip from '@material-ui/core/Tooltip'
 
-export default function Paragraph({ copyText, index, paragraph, addSentence, removeSentence }) {
+export default function Paragraph({ copyText, index, paragraph, addSentence, removeSentence, removeParagraph }) {
 
   return (
     <div className={styles.container}>
       <Card>
         <div className={styles.contents}>
           <div className={styles.actions}>
-
-            <Tooltip placement="left" title="Copy" aria-label="Copy Paragraph">
-              <IconButton onClick={() => copyText(paragraph)}>
-                <CopyIcon fontSize="small" />
-              </IconButton>
-            </Tooltip>
-
             <Tooltip placement="left" title="Add Sentence" aria-label="Add Sentence">
               <IconButton color="primary" onClick={() => addSentence(index, paragraph)} >
                 <AddIcon fontSize="small" />
@@ -31,11 +25,25 @@ export default function Paragraph({ copyText, index, paragraph, addSentence, rem
                 <RemoveIcon fontSize="small" />
               </IconButton>
             </Tooltip>
-
           </div>
+
           <span className={styles.text}>
             {paragraph}
           </span>
+
+          <div className={styles.actions}>
+            <Tooltip placement="left" title="Copy" aria-label="Copy Paragraph">
+              <IconButton onClick={() => copyText(paragraph)}>
+                <CopyIcon fontSize="small" />
+              </IconButton>
+            </Tooltip>
+
+            <Tooltip placement="left" title="Delete Paragraph" aria-label="Delete Paragraph">
+              <IconButton onClick={() => removeParagraph(index, paragraph)} >
+                <TrashIcon fontSize="small" />
+              </IconButton>
+            </Tooltip>
+          </div>
         </div>
       </Card>
     </div>

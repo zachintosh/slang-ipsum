@@ -9,8 +9,6 @@ function App() {
   const [words, setWords] = useState([...slang, ...ipsum])
   const [paragraphs, setParagraphs] = useState([newParagraph(words)])
 
-  console.log(words)
-
   function copyText(text) {
     if (!text) return
     const tempTextarea = document.createElement('textarea')
@@ -28,6 +26,10 @@ function App() {
 
   function addParagraph() {
     setParagraphs([...paragraphs, newParagraph(words)])
+  }
+
+  function removeParagraph(index, paragraph) {
+    setParagraphs(paragraphs.slice(0, index).concat(paragraphs.slice(index + 1)))
   }
 
   function addSentence(index, paragraph) {
@@ -55,6 +57,7 @@ function App() {
             paragraph={paragraph}
             addSentence={addSentence}
             removeSentence={removeSentence}
+            removeParagraph={removeParagraph}
           />
         ))}
       </div>
