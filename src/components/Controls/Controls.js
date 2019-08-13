@@ -32,7 +32,7 @@ export default function Controls({ addParagraph, copyAll, setWords }) {
   return (
     <div className={styles.container}>
 
-      <span className={styles.title}>Slang Ipsum</span>
+      <span className={styles.title} title="The hunnit-p nest of you're dopest dank slang">Slang Ipsum</span>
 
       <div className={styles.controls}>
         <Button color="primary" variant="text" onClick={addParagraph}>
