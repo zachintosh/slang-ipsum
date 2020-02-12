@@ -1,4 +1,4 @@
-[https://zachintosh.github.io/slang-ipsum/](https://zlw11063.github.io/slang-ipsum/)
+[https://zachintosh.github.io/slang-ipsum/](https://zachintosh.github.io/slang-ipsum/)
 
 # Slang Ipsum
 
