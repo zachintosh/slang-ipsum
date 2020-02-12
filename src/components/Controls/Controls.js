@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './Controls.module.css'
 import { Button } from '@material-ui/core'
 import AddIcon from '@material-ui/icons/Add'
@@ -6,7 +6,6 @@ import CopyIcon from '@material-ui/icons/FileCopy'
 import { makeStyles } from '@material-ui/core/styles'
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { ipsum, slang } from '../../lib/words'
 import Tooltip from '@material-ui/core/Tooltip'
 
 const useStyles = makeStyles(theme => ({
@@ -21,12 +20,11 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Controls({ addParagraph, copyAll, setWords }) {
+export default function Controls({ addParagraph, copyAll, setSlangOnly }) {
   const classes = useStyles()
 
   function updateWordSets({ target: { value, checked } }) {
-    if (checked) setWords([...ipsum, ...slang])
-    else setWords(slang)
+    setSlangOnly(checked)
   }
 
   return (

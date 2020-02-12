@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import './App.css';
 import Controls from './components/Controls/Controls'
 import Paragraph from './components/Paragraph/Paragraph'
-import { newParagraph, newSentence } from './lib/generator'
-import { slang, ipsum } from './lib/words'
+import { paragraph as newParagraph, sentence as newSentence } from '@digital-taco/slang-ipsum'
 
 function App() {
-  const [words, setWords] = useState([...slang, ...ipsum])
-  const [paragraphs, setParagraphs] = useState([newParagraph(words)])
+  const [slangOnly, setSlangOnly] = useState(false)
+  const [paragraphs, setParagraphs] = useState([newParagraph({ slangOnly })])
 
   function copyText(text) {
     if (!text) return
@@ -25,7 +24,7 @@ function App() {
   }
 
   function addParagraph() {
-    setParagraphs([...paragraphs, newParagraph(words)])
+    setParagraphs([...paragraphs, newParagraph({ slangOnly })])
   }
 
   function removeParagraph(index, paragraph) {
@@ -33,7 +32,7 @@ function App() {
   }
 
   function addSentence(index, paragraph) {
-    paragraphs[index] += ' ' + newSentence(words)
+    paragraphs[index] += ' ' + newSentence({ slangOnly })
     setParagraphs([...paragraphs])
   }
 
@@ -47,7 +46,7 @@ function App() {
 
   return (
     <>
-      <Controls addParagraph={addParagraph} copyAll={copyAll} setWords={setWords} />
+      <Controls addParagraph={addParagraph} copyAll={copyAll} setSlangOnly={setSlangOnly} />
       <div style={{ maxWidth: '900px', margin: '20px auto' }}>
         {paragraphs.map((paragraph, index) => (
           <Paragraph
