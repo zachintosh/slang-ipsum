@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/slang-ipsum/static/css/main.4c0c42e0.chunk.css",
-    "main.js": "/slang-ipsum/static/js/main.a9693bcc.chunk.js",
-    "main.js.map": "/slang-ipsum/static/js/main.a9693bcc.chunk.js.map",
+    "main.css": "/slang-ipsum/static/css/main.f938af90.chunk.css",
+    "main.js": "/slang-ipsum/static/js/main.80170ed9.chunk.js",
+    "main.js.map": "/slang-ipsum/static/js/main.80170ed9.chunk.js.map",
     "runtime~main.js": "/slang-ipsum/static/js/runtime~main.fccba357.js",
     "runtime~main.js.map": "/slang-ipsum/static/js/runtime~main.fccba357.js.map",
-    "static/js/2.d4cae02f.chunk.js": "/slang-ipsum/static/js/2.d4cae02f.chunk.js",
-    "static/js/2.d4cae02f.chunk.js.map": "/slang-ipsum/static/js/2.d4cae02f.chunk.js.map",
+    "static/js/2.6ad5751b.chunk.js": "/slang-ipsum/static/js/2.6ad5751b.chunk.js",
+    "static/js/2.6ad5751b.chunk.js.map": "/slang-ipsum/static/js/2.6ad5751b.chunk.js.map",
     "index.html": "/slang-ipsum/index.html",
-    "precache-manifest.69a555d555b623c8a62d79e3e1e4cc6c.js": "/slang-ipsum/precache-manifest.69a555d555b623c8a62d79e3e1e4cc6c.js",
+    "precache-manifest.bef411d6453bbebe270839c1351782bc.js": "/slang-ipsum/precache-manifest.bef411d6453bbebe270839c1351782bc.js",
     "service-worker.js": "/slang-ipsum/service-worker.js",
-    "static/css/main.4c0c42e0.chunk.css.map": "/slang-ipsum/static/css/main.4c0c42e0.chunk.css.map"
+    "static/css/main.f938af90.chunk.css.map": "/slang-ipsum/static/css/main.f938af90.chunk.css.map"
   }
 }
